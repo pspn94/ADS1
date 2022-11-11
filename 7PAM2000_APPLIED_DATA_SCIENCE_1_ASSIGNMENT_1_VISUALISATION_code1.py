@@ -12,7 +12,17 @@ import matplotlib.pyplot as plt
 #Creating Functions
 def lineplot_countries(iso0, iso1, iso2, iso3, iso4):
     """
+    This function was created to produce a line plot of COVID-19 cases by time
     
+    Args:
+        iso0 (str): select a country with the iso_code
+        iso1 (str): select a country with the iso_code
+        iso2 (str): select a country with the iso_code
+        iso3 (str): select a country with the iso_code
+        iso4 (str): select a country with the iso_code
+        
+    Return:
+        Save and show a line plot of COVID-19 cases by time
     """
     fig, ax = plt.subplots(dpi=240)
     
@@ -43,7 +53,18 @@ def lineplot_countries(iso0, iso1, iso2, iso3, iso4):
 
 def barhplot_countries(iso0, iso1, iso2, iso3, iso4):
     """
+    This function was created to produce a horizontal bar chart of COVID-19 
+    deaths by countries
     
+    Args:
+        iso0 (str): select a country with the iso_code
+        iso1 (str): select a country with the iso_code
+        iso2 (str): select a country with the iso_code
+        iso3 (str): select a country with the iso_code
+        iso4 (str): select a country with the iso_code
+        
+    Return:
+        Save and show a horizontal bar chart of COVID-19 deaths by countries
     """
 
     bar_colors = ['lightsalmon', 'thistle','khaki',
@@ -80,7 +101,17 @@ def barhplot_countries(iso0, iso1, iso2, iso3, iso4):
 
 def boxplot_continent(cont0, cont1, cont2):
     """
+    This function was created to produce three boxplots of people fully
+    vaccinated aginst COVID-19 by continents
     
+    Args:
+        cont0 (str): select a country with the continent name
+        cont1 (str): select a country with the continent name
+        cont2 (str): select a country with the continent name
+        
+    Return:
+        Save and show three boxplots of people fully vaccinated aginst 
+        COVID-19 by continents
     """
 
     fig, ax = plt.subplots(3,1, figsize=(10,8), dpi=240)
