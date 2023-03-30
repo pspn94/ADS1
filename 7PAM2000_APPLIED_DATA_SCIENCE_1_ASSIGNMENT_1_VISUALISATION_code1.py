@@ -8,6 +8,7 @@
 #Importing Pandas and Matplotlib.pyplot Libraries
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 #Creating Functions
 def lineplot_countries(iso0, iso1, iso2, iso3, iso4):
